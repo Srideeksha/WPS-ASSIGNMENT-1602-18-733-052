@@ -1,0 +1,33 @@
+<html>
+   <head>
+      <title>Question2</title>
+      <script>
+            if(document.images) 
+            {
+               var image1 = new Image(); 
+               image1.src = "pic1.jpg";
+               var image2 = new Image(); 
+               image2.src = "pic2.jpg";
+               var image3 = new Image(); 
+               image3.src = "pic3.jpg";
+            }
+      </script>
+      <style>
+            img
+            {
+            width:300px;
+            height:300px;
+            padding:25px 25px 25px 25px;
+            }
+      </style>
+   </head>
+   <body>
+      <a href = "#" onMouseOver = "document.myImage1.src = image2.src;" onMouseOut = "document.myImage1.src = image1.src;">
+         <img name = "myImage1" src = "pic1.jpg" />
+      <a href = "#" onMouseOver = "document.myImage2.src = image3.src;" onMouseOut = "document.myImage2.src = image2.src;">
+         <img name = "myImage2" src = "pic2.jpg" />
+      <a href = "#" onMouseOver = "document.myImage3.src = image1.src;" onMouseOut = "document.myImage3.src = image3.src;">
+         <img name = "myImage3" src = "pic3.jpg" />
+      </a>
+   </body>
+</html>
